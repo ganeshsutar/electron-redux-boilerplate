@@ -11,4 +11,4 @@
 
 #### Application
 Just a simple application with actions, reducers and connection between them.
-Clone the repo, do 'npm install'. After successful installation do `npm start`.
+Clone the repo, do 'npm install'. After successful installation do `gulp && npm start`.
