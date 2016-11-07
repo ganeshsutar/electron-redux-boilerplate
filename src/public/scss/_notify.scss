@@ -1,0 +1,63 @@
+.notifyjs-corner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 5px;
+  z-index: 1050;
+  box-sizing: border-box;
+}
+
+.notifyjs-info-msg-base {
+  position: relative;
+  background: #27ae60;
+  padding: 10px;
+  border-radius: 3px;
+  min-width: 400px;
+  opacity: 0.9;
+  color: #ecf0f1;
+
+  .glyphicon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 15px;
+    font-size: 2em;
+  }
+
+  .notify-text {
+    padding-left: 50px;
+
+    .title {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+}
+
+.notifyjs-error-msg-base {
+  position: relative;
+  background: #c0392b;
+  padding: 10px;
+  border-radius: 3px;
+  min-width: 400px;
+  color: #ecf0f1;
+
+  .glyphicon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 15px;
+    font-size: 2em;
+  }
+
+  .notify-text {
+    padding-left: 50px;
+
+    .title {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+}

@@ -17,3 +17,11 @@ ReactDom.render(
       </Router>
     </Provider>
   ), document.getElementById('root'));
+
+$.notify.addStyle('info-msg', {
+  html: '<div class="notify-div"><span class="glyphicon glyphicon-info-sign"></span><div class="notify-text"><div class="title"><span data-notify-html="title" /></div><span data-notify-html="text" /></div></div>'
+});
+
+$.notify.addStyle('error-msg', {
+  html: '<div class="notify-div"><span class="glyphicon glyphicon-remove-sign"></span><div class="notify-text"><div class="title"><span data-notify-html="title" /></div><span data-notify-html="text" /></div></div>'
+});

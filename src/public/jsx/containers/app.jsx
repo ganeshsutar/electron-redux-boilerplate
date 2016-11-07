@@ -4,7 +4,8 @@ import simpleActions from '../actions/simpleActions.jsx';
 
 @connect((store)=>{
   return {
-    message: store.simpleReducer.message
+    message: store.simpleReducer.message,
+    count: store.simpleReducer.count
   };
 })
 export default class App extends React.Component {
@@ -15,13 +16,24 @@ export default class App extends React.Component {
 
   clickMe() {
     simpleActions.clickMe();
+    $.notify({
+      title: 'Encounters',
+      text: 'Got a response'
+    }, {
+      style: 'error-msg'
+    });
+  }
+
+  componentWillReceiveProps(newProps){
+    console.log(this.props);
+    console.log(newProps);
   }
 
   render() {
     return (
       <div className="app">
         <h3>Hello World !!!</h3>
-        <p>{this.props.message}</p>
+        <p>{this.props.message} Count: {this.props.count}</p>
         <button onClick={this.clickMe}>Click Me</button>
       </div>
     )
