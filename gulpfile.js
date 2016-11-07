@@ -29,7 +29,7 @@ gulp.task('jsx', function(done){
 gulp.task('electron', function(done){
   return gulp.src('./src/app/**/*.js')
     .pipe(babel({
-      presets: [es2015]
+      presets: ['es2015']
     }))
     .pipe(gulp.dest('./dist/app'));
 });
