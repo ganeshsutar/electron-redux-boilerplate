@@ -16,12 +16,6 @@ export default class App extends React.Component {
 
   clickMe() {
     simpleActions.clickMe();
-    $.notify({
-      title: 'Encounters',
-      text: 'Got a response'
-    }, {
-      style: 'error-msg'
-    });
   }
 
   componentWillReceiveProps(newProps){
