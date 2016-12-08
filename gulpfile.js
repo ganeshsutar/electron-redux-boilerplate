@@ -45,7 +45,9 @@ gulp.task('build', ['styles','jsx'], function(callback){
             './assets/**',
             'main.js',
             'index.html',
-            'package.json'
+            'package.json',
+            './bower_components/lato-webfont/css/*.css',
+            './bower_components/lato-webfont/fonts/**/*'
         ]
     });
 });
@@ -59,11 +61,11 @@ gulp.task('build-electron', ['build'], function(){
             break;
         case 'linux':
             // execute build.linux.js
-            break;
+            return release_window.build();
         case 'win32':
             // execute build.window.js
-            return release_window();
+            return release_window.build();
     }
 });
 
-gulp.task('default', ['styles']);
+gulp.task('default', ['styles', 'jsx']);

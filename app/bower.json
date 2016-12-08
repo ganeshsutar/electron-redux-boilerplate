@@ -1,0 +1,31 @@
+{
+  "name": "react-app",
+  "description": "This is a react js application with electron",
+  "main": "main.js",
+  "authors": [
+    "ganeshsutar"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "redux",
+    "electron",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/ganeshsutar/electron-redux-boilerplate",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "src",
+    "less",
+    "scss"
+  ],
+  "dependencies": {
+    "lato-webfont": "^1.1.2"
+  }
+}
