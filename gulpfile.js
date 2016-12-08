@@ -51,9 +51,19 @@ gulp.task('build', ['styles','jsx'], function(callback){
 });
 
 gulp.task('build-electron', ['build'], function(){
-    var release_window = require('./resources/build.windows.js');
+    var release_window = require('./resources/windows/build.windows.js');
     var os = require('os');
-    return release_window.build();
+    switch(os.platform()){
+        case 'darwin':
+            // execute build.osx.js
+            break;
+        case 'linux':
+            // execute build.linux.js
+            break;
+        case 'win32':
+            // execute build.window.js
+            return release_window();
+    }
 });
 
 gulp.task('default', ['styles']);
