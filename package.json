@@ -20,6 +20,7 @@
     "fs-jetpack": "^0.10.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-debug": "^3.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7",
     "rcedit": "^0.7.0",
